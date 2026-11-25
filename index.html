@@ -124,6 +124,11 @@ h2{font-size:clamp(32px,4vw,48px);font-weight:800;letter-spacing:-.02em;line-hei
 
 
 /* plan */
+.perks{display:flex;flex-direction:column;gap:8px;margin-top:18px}
+.perks span{display:flex;gap:8px;align-items:center;font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px 12px}
+.perks span::before{content:"✓";color:#059669;font-weight:800}
+.perks s{color:var(--muted);margin-left:auto}
+
 .plan{display:grid;grid-template-columns:1fr 1.3fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(17,24,39,.25);max-width:980px;margin:0 auto}
 .plan-l{padding:44px;background:radial-gradient(120% 90% at 0% 0%,#fff1e6 0%,#fff 70%);border-right:1px solid var(--line)}
 .price{display:flex;align-items:flex-start;gap:8px;margin:22px 0 10px}
@@ -236,7 +241,7 @@ footer{padding:56px 0 40px;font-size:14px;color:var(--muted)}
       <a class="btn btn-dark" href="https://wa.me/212730516606?text=Bonjour%2C%20je%20souhaite%20une%20d%C3%A9mo%20de%20Manteo"><span>Réserver une démo gratuite</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="arr"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-ghost" href="#fonctions">Voir les fonctionnalités</a>
     </div>
-    <div class="trust"><span>✓ <b>API officielle</b> WhatsApp Business</span><span>✓ Paiement en <b>MAD</b></span><span>✓ Support <b>à Casablanca</b></span></div>
+    <div class="trust"><span>✓ <b>API officielle</b> WhatsApp Business</span><span>✓ Paiement en <b>MAD</b></span><span>✓ Support <b>à Casablanca</b></span><span>✓ <b>Satisfait ou remboursé</b> 7 jours</span></div>
   </div>
 </header>
 
@@ -314,6 +319,7 @@ footer{padding:56px 0 40px;font-size:14px;color:var(--muted)}
         <span class="tag">Manteo Pro</span>
         <div class="price"><b>299</b><span>MAD<br><small>par mois</small></span></div>
         <p class="note" style="margin-top:0">+ messages au prix Meta. Résiliable à tout moment.</p>
+        <div class="perks"><span><b>Mise en place offerte</b> <s>990 MAD</s></span><span><b>Satisfait ou remboursé</b> 7 jours</span></div>
         <a class="btn btn-dark" style="margin-top:24px" href="https://wa.me/212730516606?text=Bonjour%2C%20je%20souhaite%20m%27abonner%20%C3%A0%20Manteo%20Pro"><span>Commencer avec Manteo</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="arr"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <ul class="plan-r">
@@ -324,7 +330,7 @@ footer{padding:56px 0 40px;font-size:14px;color:var(--muted)}
         <li>Création et validation de vos modèles Meta</li>
         <li>Statistiques d'envoi, de lecture et de réponse</li>
         <li>Gestion automatique des désinscriptions (STOP)</li>
-        <li>Mise en place et support à Casablanca</li>
+        <li>Mise en place offerte et support à Casablanca</li>
       </ul>
     </div>
 
@@ -379,9 +385,10 @@ footer{padding:56px 0 40px;font-size:14px;color:var(--muted)}
     <div class="faq">
       <details><summary>Est-ce que je garde mon WhatsApp sur mon téléphone ?</summary><p>Nous connectons un numéro dédié à l'API WhatsApp Business. Ce numéro ne s'utilise plus dans l'application WhatsApp du téléphone ; tout se passe dans Manteo, accessible depuis n'importe quel navigateur.</p></details>
       <details><summary>Est-ce que mon numéro risque d'être bloqué ?</summary><p>Non. Manteo utilise l'API officielle de Meta, pas d'outils non autorisés. Les désinscriptions (STOP) sont gérées automatiquement pour protéger votre réputation.</p></details>
+      <details><summary>Et si Manteo ne me convient pas ?</summary><p>Vous êtes couvert par notre garantie « satisfait ou remboursé » de 7 jours : si Manteo ne vous convient pas dans les 7 jours suivant votre premier paiement, nous vous remboursons l'abonnement, sans justification. La mise en place est offerte. Seuls les messages déjà envoyés (facturés par Meta) ne sont pas remboursables.</p></details>
       <details><summary>Combien de temps pour démarrer ?</summary><p>En général quelques jours : le temps de connecter votre numéro et de faire valider vos premiers modèles de messages par Meta.</p></details>
       <details><summary>Quelle différence entre messages « service » et « marketing » ?</summary><p>Les messages de service concernent une action du client (rendez-vous, commande, paiement) et coûtent beaucoup moins cher. Les messages marketing servent à promouvoir une offre.</p></details>
-      <details><summary>Combien coûte Manteo ?</summary><p>299 MAD par mois pour tout Manteo, plus le coût des messages au tarif de Meta. Pas d'engagement : vous arrêtez quand vous voulez.</p></details>
+      <details><summary>Combien coûte Manteo ?</summary><p>299 MAD par mois pour tout Manteo, plus le coût des messages au tarif de Meta. La mise en place est offerte, vous êtes remboursé sous 7 jours si Manteo ne vous convient pas, et vous arrêtez quand vous voulez.</p></details>
       <details><summary>Mes données sont-elles protégées ?</summary><p>Vos données sont hébergées de manière sécurisée et ne sont jamais revendues. Manteo est édité par MFP Solutions, société marocaine basée à Casablanca.</p></details>
     </div>
   </div>
